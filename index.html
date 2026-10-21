@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dashboard EDA Literasi Digital Provinsi</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="lg"><div class="cd"><h1>Dashboard EDA</h1><p class="mu">Literasi digital 38 provinsi · BPS 2024–2025</p>
+<label class="mu">Username</label><input id="u" autocomplete="username"><label class="mu">Password</label><input id="pw" type="password" autocomplete="current-password">
+<div class="er" id="er"></div><button class="p" style="width:100%" onclick="login()">Masuk</button>
+<p class="mu" style="margin-bottom:0">Akun demo: admin / bps2024</p></div></div>
+<div id="app" hidden><header class="hd"><div class="in"><b class="lo">◎ DigiProv</b><nav id="nv"></nav><span class="sp"></span><input class="gs" placeholder="Cari provinsi" oninput="gsr(this.value)"><button onclick="logout()">Keluar</button></div><div class="gm" id="gm"></div></header><main class="w" id="main"></main></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body></html>
