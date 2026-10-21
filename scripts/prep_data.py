@@ -20,9 +20,10 @@ def parse(path,keys):
             out[r[0].strip()]=dict(zip(keys,v))
     return out
 src=[('Persentase_Penduduk_Berumur*.xlsx',['pi_u','pi_r','pi_t']),
-     ('Persentase_Rumah_Tangga*.csv',['rt_u','rt_r','rt_t']),
+     ('Persentase_Rumah_Tangga_yang_Pernah*.csv',['rt_u','rt_r','rt_t']),
      ('Persentase_Penduduk_yang_Memiliki*.csv',['hp_u','hp_r','hp_t']),
-     ('4_4_1*.xlsx',['tik'])]
+     ('Persentase_Rumah_Tangga_yang_Memiliki_Menguasai_Komputer*.xlsx',['kom_u','kom_r','kom_t']),
+     ('4_4_1*2024.csv',['tik'])]
 data={}
 for g,k in src:
     p=glob.glob(U+g)[0]; d=parse(p,k)
